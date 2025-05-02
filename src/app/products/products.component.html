@@ -1,0 +1,9 @@
+<div class="products">
+  <h2>Our Products</h2>
+  <p>Find the best products at affordable prices!</p>
+  <!-- List products here -->
+  <div *ngFor="let product of products">
+    <app-product-item [product]="product"></app-product-item>
+  </div>
+
+</div>

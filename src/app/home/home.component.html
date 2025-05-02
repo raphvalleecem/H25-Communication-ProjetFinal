@@ -1,0 +1,9 @@
+<div class="home">
+  <h1>Bnjour to Our Shopping Site</h1>
+  <p>Explore our amazing produit and make your achgat today!</p>
+  <button routerLink="/products">Voir Products</button>
+  <h2>Nos produi en vedet</h2>
+  <div *ngFor="let product of products">
+    <app-product-item [product]="product"></app-product-item>
+  </div>
+</div>

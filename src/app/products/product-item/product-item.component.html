@@ -1,0 +1,10 @@
+<div *ngIf="product != null" class="product-item">
+  <div *ngIf="product.imageUrl">
+    <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image"/>
+  </div>
+  <div class="product-details">
+    <h3>{{ product.name }}</h3>
+    <p *ngIf="product.price">Prix: ${{ product.price }}</p>
+    <p *ngIf="!product.price">Prix: Not available</p>
+  </div>
+</div>

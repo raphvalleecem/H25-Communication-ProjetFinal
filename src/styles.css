@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: dodgerblue;
+}
+
+a:hover {
+  color: purple;
+}
+
+.header {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: dodgerblue;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 10px;
+}
+
+nav ul li a {
+  color: rebeccapurple;
+  background-color: dodgerblue;
+  font-size: 18px;
+}
+
+/* Main Page Styles */
+.home, .products, .cart {
+  padding: 20px;
+  background-color: #222;
+  color: white;
+}
+
+button {
+  background-color: dodgerblue;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: purple;
+}
