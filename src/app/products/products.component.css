@@ -5,18 +5,20 @@
 
 .product-item {
   display: flex;
-  align-items: center; /* Vertically center content */
+  align-items: center;
   margin: 15px 0;
-  background: linear-gradient(135deg, #7DF9FF, #8A2BE2); /* Gradient background */
+  background: linear-gradient(135deg, #7DF9FF, #8A2BE2);
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 120px;
 }
 
 .product-image {
-  max-width: 100px;
-  max-height: 100px;
-  margin-right: 20px; /* Space between image and product details */
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  object-fit: contain;
 }
 
 .product-details h3 {

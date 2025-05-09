@@ -1,62 +1,87 @@
-/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: black;
-  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
 a {
   text-decoration: none;
-  color: dodgerblue;
+  color: #3498db;
+  transition: all 0.3s ease;
 }
 
 a:hover {
-  color: purple;
+  color: #2980b9;
 }
 
 .header {
-  background-color: black;
-  padding: 20px;
-  text-align: center;
+  background: linear-gradient(rgba(41, 128, 185, 0.8), rgba(44, 62, 80, 0.9));
+  padding: 15px 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: static;
+  z-index: 1000;
 }
 
 nav {
-  background-color: dodgerblue;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-  display: inline;
-  margin: 10px;
+  margin: 0 15px;
 }
 
 nav ul li a {
-  color: rebeccapurple;
-  background-color: dodgerblue;
-  font-size: 18px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
-/* Main Page Styles */
 .home, .products, .cart {
   padding: 20px;
-  background-color: #222;
-  color: white;
+  background-color: #f8f9fa;
+  color: #333;
+  min-height: 100vh;
 }
 
 button {
-  background-color: dodgerblue;
-  color: black;
+  background-color: #3498db;
+  color: white;
+  padding: 12px 25px;
   border: none;
-  padding: 10px 20px;
+  border-radius: 30px;
   cursor: pointer;
+  font-size: 16px;
+  margin: 25px auto;
+  display: block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 button:hover {
-  background-color: purple;
+  background-color: #2980b9;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }

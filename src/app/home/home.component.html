@@ -1,9 +1,32 @@
 <div class="home">
-  <h1>Bnjour to Our Shopping Site</h1>
-  <p>Explore our amazing produit and make your achgat today!</p>
-  <button routerLink="/products">Voir Products</button>
-  <h2>Nos produi en vedet</h2>
-  <div *ngFor="let product of products">
-    <app-product-item [product]="product"></app-product-item>
+  <div class="hero-section">
+    <div class="hero-content">
+      <h1>Bienvenue sur notre site de shopping</h1>
+      <p>Explorez nos produits incroyables et faites vos achats aujourd'hui!</p>
+      <button routerLink="/products">Voir les produits</button>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2 class="section-title">Nos produits en vedette</h2>
+    <div class="products-container">
+      <div *ngFor="let product of products" class="product-item">
+        <app-product-item [product]="product"></app-product-item>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2 class="section-title">Notre équipe</h2>
+    <div class="employees-container">
+      <div *ngFor="let employee of employees" class="employee-card">
+        <h3>{{ employee.name }}</h3>
+        <p><strong>Poste:</strong> {{ employee.position }}</p>
+        <p><strong>Département:</strong> {{ employee.department }}</p>
+        <p><strong>Courriel:</strong> {{ employee.email }}</p>
+        <p><strong>Téléphone:</strong> {{ employee.phone }}</p>
+        <p><strong>Date d'embauche:</strong> {{ employee.hireDate | date:'mediumDate' }}</p>
+      </div>
+    </div>
   </div>
 </div>
