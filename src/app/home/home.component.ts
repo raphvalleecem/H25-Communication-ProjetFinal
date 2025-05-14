@@ -1,8 +1,15 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {RouterLink} from "@angular/router";
 import {DbSingletonService, Employee, Product} from "../dbSingleton.service";
-import {DatePipe, NgForOf} from "@angular/common";
-import {ProductItemComponent} from "../products/product-item/product-item.component";
+import {CommonModule, DatePipe, NgForOf} from "@angular/common";
+import {
+  CarouselCaptionComponent,
+  CarouselComponent,
+  CarouselControlComponent,
+  CarouselIndicatorsComponent,
+  CarouselInnerComponent,
+  CarouselItemComponent,
+} from "@coreui/angular";
 
 @Component({
   selector: 'app-home',
@@ -10,13 +17,19 @@ import {ProductItemComponent} from "../products/product-item/product-item.compon
   imports: [
     RouterLink,
     NgForOf,
-    ProductItemComponent,
-    DatePipe
+    DatePipe,
+    CarouselComponent,
+    CarouselIndicatorsComponent,
+    CarouselInnerComponent,
+    CarouselItemComponent,
+    CarouselCaptionComponent,
+    CarouselControlComponent,
+    CommonModule,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   products: Product[] = [];
   employees: Employee[] = [];
 

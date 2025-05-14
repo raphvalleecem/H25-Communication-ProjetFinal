@@ -54,6 +54,7 @@
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  height: 10%;
 }
 
 .section-title {
@@ -168,4 +169,10 @@ button:hover {
   color: #2c3e50;
   font-weight: 600;
   margin-right: 5px;
+}
+
+.product-image {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
