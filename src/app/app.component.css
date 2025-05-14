@@ -1,0 +1,15 @@
+.logo{
+    font-family: 'CalSans';
+    text-align: center;
+    display: flex;
+    align-content: start;
+    font-size: 2rem;
+}
+
+.nav-container{
+    display: flex;
+}
+
+.nav-list-items{
+    margin: auto;
+}

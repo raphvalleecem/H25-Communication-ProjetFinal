@@ -26,8 +26,7 @@ a:hover {
 }
 
 nav {
-  max-width: 1200px;
-  margin: 0 auto;
+
 }
 
 nav ul {
@@ -84,4 +83,9 @@ button:hover {
 nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.1);
   transform: translateY(-2px);
+}
+
+@font-face {
+  font-family: 'CalSans';
+  src: url(../public/fonts/CalSans-Regular.ttf);
 }
