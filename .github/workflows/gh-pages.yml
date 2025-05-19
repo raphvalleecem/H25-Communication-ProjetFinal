@@ -20,6 +20,6 @@ jobs:
     - name: Install ng-cli
       run: npm install -g @angular/cli
     - name: Install angular-cli-ghpages
-      run: ng add angular-cli-ghpages
+      run: ng add angular-cli-ghpages --skip-confirmation
     - name: Deploy
       run: ng deploy --base-href=/H25-Communication-ProjetFinal/
