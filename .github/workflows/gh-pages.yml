@@ -21,7 +21,7 @@ jobs:
       run: npm install -g @angular/cli
     - name: Install angular-cli-ghpages
       run: ng add angular-cli-ghpages --skip-confirmation
-    - name: Setup git
-      run: git config --global user.email "ghdeploy@github.com" && git config --global user.name "GH_Deploy"
+    #- name: Setup git
+    #  run: git config --global user.email "ghdeploy@github.com" && git config --global user.name "GH_Deploy"
     - name: Deploy
-      run: ng deploy --base-href=/H25-Communication-ProjetFinal/
+      run: ng deploy --repo=https://github.com/raphvalleecem/H25-Communication-ProjetFinal.git --name="raphvalleecem" --email=2263456@cegepmontpetit.ca
