@@ -1,0 +1,24 @@
+name: GH Pages
+
+on:
+  push:
+    branches: [ main]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: latest
+    - name: Install dependencies
+      run: npm install
+
+    - name: Install angular-cli-ghpages
+      run: ng add angular-cli-ghpages
+    - name: Deploy
+      run: ng deploy --base-href=/H25-Communication-ProjetFinal/
