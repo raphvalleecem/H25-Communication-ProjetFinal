@@ -24,4 +24,4 @@ jobs:
     #- name: Setup git
     #  run: git config --global user.email "ghdeploy@github.com" && git config --global user.name "GH_Deploy"
     - name: Deploy
-      run: ng deploy -base-href=/H25-Communication-ProjetFinal/ --repo=https://github.com/raphvalleecem/H25-Communication-ProjetFinal.git --name="raphvalleecem" --email=2263456@cegepmontpetit.ca
+      run: ng deploy --base-href=/H25-Communication-ProjetFinal/ --repo=https://github.com/raphvalleecem/H25-Communication-ProjetFinal.git --name="raphvalleecem" --email=2263456@cegepmontpetit.ca
