@@ -1,5 +1,9 @@
 <div class="products">
   <h2>Nos Produits</h2>
+  <p>Promotions Speciales!</p>
+  <div *ngFor="let product of products">
+    <app-product-item *ngIf="product.OnSale" [product]="product"></app-product-item>
+  </div>
   <p>Trouvez les meilleurs produits à des prix abordables!</p>
   <div *ngFor="let product of products">
     <app-product-item [product]="product"></app-product-item>

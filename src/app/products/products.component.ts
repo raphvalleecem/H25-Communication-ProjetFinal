@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {DbSingletonService, Product} from "../dbSingleton.service";
-import {NgForOf} from "@angular/common";
+import {NgForOf, NgIf} from "@angular/common";
 import {ProductItemComponent} from "./product-item/product-item.component";
 
 @Component({
@@ -8,7 +8,8 @@ import {ProductItemComponent} from "./product-item/product-item.component";
   standalone: true,
   imports: [
     NgForOf,
-    ProductItemComponent
+    ProductItemComponent,
+    NgIf
   ],
   templateUrl: './products.component.html',
   styleUrl: './products.component.css'
