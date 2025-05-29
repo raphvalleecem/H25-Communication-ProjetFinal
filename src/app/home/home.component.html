@@ -13,27 +13,28 @@
   <div class="content-section">
     <h2 class="section-title">Nos produits en vedette</h2>
     <c-carousel [animate]="true" [dark]="true" [wrap]="false">
-      <c-carousel-indicators/>
       <c-carousel-inner>
         @for (slide of products; track slide.imageUrl) {
           <c-carousel-item>
-            <div style="height: 100px;display: flex;align-items: center;justify-content: center;">
+            <div style="display: flex;justify-content: center;">
               <img
-                [src]="slide.imageUrl"
+                [ngSrc]="slide.imageUrl"
                 alt="{{slide.name}}"
                 class="product-image"
                 loading="lazy"
+                height="300"
+                width="1000"
               />
-              <c-carousel-caption class="d-none d-md-block">
-                <h3>{{ slide.name }}</h3>
-                <p>{{ slide.price }}$</p>
+              <c-carousel-caption>
+                <h3 style="color:black;">{{ slide.name }}</h3>
+                <p style="color:black;">{{ slide.price }}$</p>
               </c-carousel-caption>
             </div>
           </c-carousel-item>
         }
       </c-carousel-inner>
-      <c-carousel-control [routerLink] caption="Previous" direction="prev"/>
-      <c-carousel-control [routerLink] caption="Next" direction="next"/>
+      <c-carousel-control [routerLink]="" caption="Previous" direction="prev"/>
+      <c-carousel-control [routerLink]="" caption="Next" direction="next"/>
     </c-carousel>
   </div>
 

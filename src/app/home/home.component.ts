@@ -1,12 +1,11 @@
 import {Component, OnInit} from '@angular/core';
 import {RouterLink} from "@angular/router";
 import {DbSingletonService, Employee, Product} from "../dbSingleton.service";
-import {CommonModule, DatePipe, NgForOf} from "@angular/common";
+import {CommonModule, DatePipe, NgForOf, NgOptimizedImage} from "@angular/common";
 import {
   CarouselCaptionComponent,
   CarouselComponent,
   CarouselControlComponent,
-  CarouselIndicatorsComponent,
   CarouselInnerComponent,
   CarouselItemComponent,
 } from "@coreui/angular";
@@ -19,12 +18,12 @@ import {
     NgForOf,
     DatePipe,
     CarouselComponent,
-    CarouselIndicatorsComponent,
     CarouselInnerComponent,
     CarouselItemComponent,
     CarouselCaptionComponent,
     CarouselControlComponent,
     CommonModule,
+    NgOptimizedImage,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
