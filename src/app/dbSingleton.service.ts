@@ -85,6 +85,24 @@ export class DbSingletonService {
     },
   ];
 
+  public avis: Avis[] = [
+    {
+      user: 'Mahmoud Thibodeau',
+      stars: 5,
+      description: 'Service à la clientèle au top! Mon go-to pour tout ce qui est produit pour ordinateurs.',
+    },
+    {
+      user: 'Robert Gatorade',
+      stars: 5,
+      description: 'Produits de haute qualité, à prix abordables!',
+    },
+    {
+      user: 'Marie-Michelle De la Framboiserie',
+      stars: 5,
+      description: 'Mon équipe de bowling cherche un joueur pour notre tournoi ce week-end. Des intéressés?',
+    }
+  ];
+
 }
 
 export interface Product {
@@ -100,4 +118,9 @@ export interface Employee {
   email: string;
   phone: string;
   hireDate: Date;
+}
+export interface Avis {
+  user: string
+  stars: number
+  description: string
 }
