@@ -1,13 +1,8 @@
-.product-list {
-  padding: 20px;
-  background-color: #f8f8f8;
-}
-
 .product-item {
   display: flex;
   align-items: center;
   margin: 15px 0;
-  background: linear-gradient(135deg, #7DF9FF, #8A2BE2);
+  background: #1e2227;
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -35,11 +30,15 @@
 
 .product-details p {
   margin: 5px 0;
-  color: #555;
+  color: aliceblue;
+  font-weight: 500;
 }
 
 
 h3 {
-  color: mediumpurple;
-  text-shadow: dodgerblue 1px 1px;
+  background: linear-gradient(262deg, #9500ff 40%, #03A9F4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px 1px aliceblue;
 }

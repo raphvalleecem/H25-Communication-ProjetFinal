@@ -63,7 +63,7 @@ export class DbSingletonService {
       onCart: false
     },
     {
-      name: 'Camera Digital',
+      name: 'Caméra Digital',
       imageUrl: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=1000&auto=format&fit=crop',
       price: 349,
       onSale: true,

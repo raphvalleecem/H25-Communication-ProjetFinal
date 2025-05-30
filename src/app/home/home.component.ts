@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {RouterLink} from "@angular/router";
+import {provideRouter, RouterLink} from "@angular/router";
 import {DbSingletonService, Employee, Product} from "../dbSingleton.service";
 import {CommonModule, DatePipe, NgForOf, NgOptimizedImage} from "@angular/common";
 import {
@@ -9,6 +9,8 @@ import {
   CarouselInnerComponent,
   CarouselItemComponent,
 } from "@coreui/angular";
+import {NgIcon, provideIcons} from "@ng-icons/core"
+import {bootstrapFacebook, bootstrapX, bootstrapInstagram, bootstrapYoutube} from "@ng-icons/bootstrap-icons"
 
 @Component({
   selector: 'app-home',
@@ -24,7 +26,9 @@ import {
     CarouselControlComponent,
     CommonModule,
     NgOptimizedImage,
+    NgIcon
   ],
+  providers: [provideIcons({bootstrapFacebook, bootstrapX, bootstrapInstagram, bootstrapYoutube})],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

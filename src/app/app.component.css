@@ -1,4 +1,5 @@
 .logo{
+    color: aliceblue;
     font-family: 'CalSans';
     text-align: center;
     display: flex;
@@ -8,7 +9,7 @@
 
 a {
   text-decoration: none;
-  color: white;
+  color: aliceblue;
   transition: all 0.3s ease;
 }
 
@@ -25,10 +26,24 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: aliceblue;
   font-size: 1.1rem;
   font-weight: 600;
   padding: 10px 15px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.align-content-center{
+  align-content: center;
+}
+
+.connex{
+  cursor: pointer;
+  color: aliceblue;
+  font-size: 1.1rem;
+  font-weight: 600;
   border-radius: 30px;
   transition: all 0.3s ease;
   display: inline-block;
@@ -39,7 +54,7 @@ nav ul li a {
 }
 
 .nav-list-items{
-    margin: auto;
+    margin: auto !important;
 }
 
 .nav ul li a:hover {

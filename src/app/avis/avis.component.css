@@ -1,6 +1,7 @@
-.avis-list {
-  padding: 20px;
-  background-color: #f8f8f8;
+.avis{
+  background: #17181a;
+  display: grid;
+  padding: 2rem;
 }
 
 .avis-item {
@@ -36,3 +37,68 @@ h3 {
   color: mediumpurple;
   text-shadow: dodgerblue 1px 1px;
 }
+
+h2{
+  background: linear-gradient(485deg, #bd42ff, #03A9F4 40%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p{
+  color: aliceblue;
+  font-weight: 300;
+}
+
+.mb-4{
+  margin-bottom: 4rem;
+}
+
+.pt-0{
+  padding-top: 0;
+}
+
+footer{
+  text-align: center;
+  color: aliceblue;
+  background-color: #0a0c10;
+}
+
+footer a{
+  margin-left: 1rem;
+  color: aliceblue;
+  font-size: 0.95rem;
+}
+
+footer span{
+  margin-left: 1.5rem;
+  font-size: 2rem;
+}
+
+.socials-container{
+  transform: translateX(-1.5%) translateY(5%);
+}
+
+footer div{
+  padding-top: 0.5rem;
+}
+
+ng-icon{
+  height: fit-content;
+}
+
+ng-icon:hover{
+  cursor: pointer;
+  color: #8003f4;
+}
+
+.logo{
+    color: aliceblue;
+    font-family: 'CalSans';
+    font-size: 1.25rem;
+}
+
+.copyright-notice{
+  padding-bottom: 0.75rem;
+}
+

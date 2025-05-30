@@ -3,13 +3,15 @@
   gap: 2rem;
   padding: 2rem;
   font-family: Arial, sans-serif;
+  background: #17181a;
 }
 
 .products-section, .summary-section {
-  background: #f9f9f9;
+  background: #1e2227;
   padding: 1.5rem;
   border-radius: 12px;
   flex: 1;
+  color: aliceblue;
 }
 
 .product-card {
@@ -33,7 +35,7 @@
 }
 
 .price {
-  color: #333;
+  color: aliceblue;
   font-weight: bold;
 }
 
@@ -59,7 +61,7 @@
 }
 
 button {
-  background-color: #007bff;
+  background: linear-gradient(167deg, #930bf4 40%, #03A9F4);
   color: white;
   border: none;
   padding: 1rem;
@@ -68,8 +70,22 @@ button {
   font-size: 1rem;
   cursor: pointer;
   margin-top: 1rem;
+  font-style: oblique;
+  font-weight: bold;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background: #007bff;
+}
+
+h2{
+  color: aliceblue;
+}
+
+h3 {
+  background: linear-gradient(262deg, #9500ff 40%, #03A9F4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px 1px aliceblue;
 }
