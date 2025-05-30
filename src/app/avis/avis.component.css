@@ -1,0 +1,38 @@
+.avis-list {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.avis-item {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  background: linear-gradient(135deg, #7DF9FF, #8A2BE2);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 120px;
+}
+
+.avis-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  object-fit: contain;
+}
+
+.avis-details h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.avis-details p {
+  margin: 5px 0;
+  color: #555;
+}
+
+
+h3 {
+  color: mediumpurple;
+  text-shadow: dodgerblue 1px 1px;
+}
